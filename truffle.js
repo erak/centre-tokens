@@ -41,6 +41,14 @@ module.exports = {
       network_id: 1
     }
   },
+  solc:
+  {
+    optimizer:
+    {
+        enabled: true,
+        runs: 200
+    }
+  },
   mocha: {
     /*
     * To disable the spreadsheet verification tool ensure that
@@ -48,5 +56,5 @@ module.exports = {
     */
     reporter: 'Spec',
     //reporter: './verification/verification_reporter.js',
-  },
+  }
 };
